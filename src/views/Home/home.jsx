@@ -18,7 +18,7 @@ const HomePage = (props) => {
       const deviceLocation = await getAllDevicesHistory();
       setDevices(deviceLocation);
     }, 3000);
-  }, [props]);
+  }, []);
 
   const logoutHandler = () => {
     logout();
@@ -79,7 +79,7 @@ const HomePage = (props) => {
         </ul>
       </nav>
       <LoadScript
-        googleMapsApiKey='AIzaSyDp8mxCk2yO_ZSk99rAylDUA8C4gz-Th_0'
+        googleMapsApiKey='API-KEY'
         loadingElement={<div>Loading...</div>}
 
       >
